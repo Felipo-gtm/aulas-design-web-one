@@ -1,0 +1,40 @@
+body {
+    background: lightblue;
+    margin: 0;
+    width: 100%;
+    height: 99vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cortinas {
+    width: 30vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pag {
+    text-align: center;
+}
+
+.circulo {
+    width: 20vw;
+    height: 20vw;
+    background: purple;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo-menor {
+    width: 5vw;
+    height: 5vw;
+    background: white;
+    border-radius: 50%;
+}

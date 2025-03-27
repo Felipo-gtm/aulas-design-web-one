@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tabelas</title>
+</head>
+
+<body>
+	<div class="page-header">
+		<h1 class="titulo-pagina">Tabelas</h1>
+		<h3 class="subtitulo-pagina"> Aula 3 - Tabelas no HTML!</h3>
+	</div>
+	<p>Nesta aula, veremos sobre tabelas do html:</p>
+	<ul>
+		<li>Para "iniciar" a tabela, usamos a tag: <b>&lttable&gt&lt/table&gt</b></li>
+		<li>Para colocar os cabeçalhos, usamos a tag: <b>&ltth&gt&lt/th&gt</b> (table header)</li>
+		<li>Para colocar cada linha, usamos: <b>&lttr&gt&lt/tr&gt</b> (table row)</li>
+		<li>Dentro de cada linha, mostramos a informação de cada coluna com a tag: <b>&lttd&gt&lt/td&gt</b> (table data)
+		</li>
+	</ul>
+	<p>Agora, segue um exemplo de tabela:</p>
+	<div class="caixa-tabela">
+		<h3 class="titulo-tabela">Tabela de jogos</h3>
+		<table class="tabela"> <!--border="10"-->
+			<tr>
+				<th>Nome Jogo</th>
+				<th>Gênero</th>
+				<th>Nota</th>
+			</tr>
+			<tr>
+				<td>Crosscode</td>
+				<td>Role Playing Game</td>
+				<td class="align-middle">11/10</td>
+			</tr>
+			<tr>
+				<td>The Elder Scrolls V: Skyrim</td>
+				<td>Adventure RPG</td>
+				<td class="align-middle">10/10</td>
+			</tr>
+			<tr>
+				<td>Dark Souls</td>
+				<td>Action RPG</td>
+				<td class="align-middle">9.8/10</td>
+			</tr>
+			<tr>
+				<td>Zelda: Breath of The Wild</td>
+				<td>Zeldinha</td>
+				<td class="align-middle">BÃO/10</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+
+<style>
+	body {
+		background: lightgray;
+		font-size: 120%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.page-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.titulo-pagina {
+			border-bottom: double purple 5px;
+		}
+	}
+
+	.caixa-tabela {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.tabela {
+		border: outset gray 10px;
+
+		th {
+			width: 150pt;
+		}
+
+		td {
+			font-size: 90%;
+		}
+
+		th,
+		td {
+			border: solid purple 1px;
+		}
+	}
+
+	.align-middle {
+		text-align: center;
+	}
+</style>
+
+</html>
